@@ -13,6 +13,7 @@ private:
     int key_xor;
 
 public:
+    Code() {}
     Code(string fileName, int key_cesar, int key_xor)
     {
         this->fileName = fileName;
@@ -20,6 +21,7 @@ public:
         this->key_xor = key_xor;
     }
     ~Code() {};
+
     void GetCode();
     void SetCode();
     void PrintCode();
